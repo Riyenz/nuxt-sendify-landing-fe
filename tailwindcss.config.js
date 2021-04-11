@@ -9,7 +9,10 @@ module.exports = {
       ...colors,
     },
   },
-  variants: {},
+  variants: {
+    opacity: ({ after }) => after(['disabled']),
+    cursor: ({ after }) => after(['disabled']),
+  },
   plugins: [],
   purge: {
     enabled: process.env.NODE_ENV === 'production',

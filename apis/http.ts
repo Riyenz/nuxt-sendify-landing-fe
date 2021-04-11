@@ -16,7 +16,7 @@ const http = (options = {}, version = 'v1') => {
 
   let http = axios.create(opts);
 
-  http.interceptors.response.use((response) => response.data);
+  http.interceptors.response.use((response) => response.data, err => { throw new Error(err.response.data.message); });
 
   return http;
 };
