@@ -67,5 +67,10 @@
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0",
     "vue-jest": "^3.0.4"
+  },
+  "engines": {
+    "npm": "please-use-yarn",
+    "yarn": ">= 1.17.3",
+    "node": ">= 12.5.0"
   }
 }
