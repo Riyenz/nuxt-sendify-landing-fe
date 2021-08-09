@@ -10,62 +10,48 @@
       </span>
     </label>
     <input
+      v-if="tag === 'input'"
       :id="identifier"
       v-model="inputVal"
-      :type="inputType"
+      :type="type"
       :name="identifier"
       :placeholder="placeholder"
       :disabled="disabled"
-      class="w-full bg-white rounded-xl border focus:border-black outline-none text-gray-700 py-2 px-3 mb-1"
       :class="classBind"
+      :max="max"
     />
-    <div
-      v-if="type === 'password'"
-      class="absolute inset-y-0 right-0 flex items-center px-3 pt-2"
-    >
-      <input
-        id="passwordToggleCheckbox"
-        class="hidden"
-        type="checkbox"
-        v-model="isPasswordShown"
-      />
-      <label
-        class="text-sm text-gray-600 cursor-pointer font-semibold"
-        for="passwordToggleCheckbox"
+    <textarea
+      v-else-if="tag === 'textarea'"
+      :id="identifier"
+      v-model="inputVal"
+      :type="type"
+      :name="identifier"
+      :placeholder="placeholder"
+      :disabled="disabled"
+      :class="classBind"
+      style="resize: none"
+    />
+    <div class="input-box__errors h-5">
+      <small
+        v-for="(message, index) in errMessage"
+        :key="index"
+        class="text-xs text-red-500 block"
       >
-        <eye-icon
-          v-if="isPasswordShown"
-          size="1.5x"
-          class="custom-class"
-        ></eye-icon>
-        <eye-off-icon size="1.5x" class="custom-class" v-else></eye-off-icon>
-      </label>
+        {{ message }}
+      </small>
     </div>
-    <small
-      v-for="(message, index) in errMessage"
-      :key="index"
-      class="text-xs text-red-500 block"
-    >
-      {{ message }}
-    </small>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue, Prop } from 'nuxt-property-decorator'
-import { EyeIcon, EyeOffIcon } from 'vue-feather-icons'
 import { template, templateSettings } from 'lodash'
 import { VALIDATION_MESSAGES } from '~/constants/validation-messages.const'
 import { IValidation } from '~/interfaces/validation.interface'
 
 templateSettings.interpolate = /{{([\s\S]+?)}}/g
 
-@Component({
-  components: {
-    EyeIcon,
-    EyeOffIcon,
-  },
-})
+@Component({})
 export default class FormInput extends Vue {
   @Prop() readonly label!: string
   @Prop() readonly name!: string
@@ -74,17 +60,8 @@ export default class FormInput extends Vue {
   @Prop() readonly disabled!: boolean
   @Prop() readonly value!: string
   @Prop() readonly validations!: IValidation
-
-  isPasswordShown = false
-
-  get inputType() {
-    switch (this.type) {
-      case 'password':
-        return this.isPasswordShown ? 'text' : 'password'
-      default:
-        return this.type
-    }
-  }
+  @Prop({ default: 'input' }) readonly tag!: string
+  @Prop() readonly max!: string
 
   get identifier(): string {
     return this.name
@@ -113,6 +90,8 @@ export default class FormInput extends Vue {
 
   get classBind(): { [key: string]: boolean } {
     return {
+      'w-full bg-white rounded-xl border focus:border-black outline-none text-gray-700 py-2 px-3 mb-1':
+        true,
       'border-red-500': this.isInputInvalid(),
       'border-gray-300': !this.isInputInvalid(),
     }
@@ -124,9 +103,3 @@ export default class FormInput extends Vue {
     !!this.validations.$invalid
 }
 </script>
-
-<style lang="scss" scoped>
-.input-box {
-  height: 90px;
-}
-</style>

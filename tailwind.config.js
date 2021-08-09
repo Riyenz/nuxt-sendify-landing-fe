@@ -1,13 +1,9 @@
-const colors = require('tailwindcss/colors')
-
 module.exports = {
+  mode: 'jit',
   theme: {
     extend: {
       fontFamily: {
         sans: ['Poppins', 'ui-sans-serif', 'system-ui', '-apple-system'],
-      },
-      colors: {
-        ...colors,
       },
     },
   },
