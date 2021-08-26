@@ -1,7 +1,8 @@
 <template>
   <div class="font-sans">
-    <main class="p-8">
-      <Nuxt />
+    <Navbar></Navbar>
+    <main class="pt-20 px-24 flex justify-center">
+      <Nuxt class="max-w-1200px" />
     </main>
   </div>
 </template>
