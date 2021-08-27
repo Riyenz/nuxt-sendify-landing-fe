@@ -1,6 +1,10 @@
 <template>
-  <div class="container">
-    <h1 class="text-3xl">{{ title }}</h1>
+  <div class="py-32">
+    <div class="grid grid-flow-row gap-40">
+      <SectionFeatured />
+      <SectionWhyUse />
+      <SectionInstall />
+    </div>
   </div>
 </template>
 

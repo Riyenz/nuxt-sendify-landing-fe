@@ -20,8 +20,33 @@
       placeholder="myshop.shopify.com"
     />
     <div class="w-14 h-full flex-shrink-0 flex items-center justify-center">
-      <button class="bg-secondary p-2 w-12 h-12 rounded-lg hover:opacity-90">
-        <img src="@/assets/images/icons/arrow-right.svg" alt="" />
+      <button
+        class="
+          bg-secondary
+          p-2
+          w-12
+          h-12
+          rounded-lg
+          transition
+          duration-200
+          ease-in-out
+          opacity-90
+          group
+          hover:opacity-100
+        "
+      >
+        <img
+          class="
+            transform
+            -translate-x-2
+            transition
+            duration-200
+            ease-in-out
+            group-hover:translate-x-0
+          "
+          src="@/assets/images/icons/arrow-right.svg"
+          alt=""
+        />
       </button>
     </div>
   </div>
