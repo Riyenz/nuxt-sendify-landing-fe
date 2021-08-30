@@ -7,3 +7,19 @@
     <Footer />
   </div>
 </template>
+
+<script lang="ts">
+import { Component, Vue } from 'nuxt-property-decorator'
+
+import { IContentDocument } from '@nuxt/content/types/content'
+import { IApp } from '~/interfaces/app.interface'
+
+@Component({})
+export default class DefaultLayout extends Vue {
+  app: Partial<IApp | IContentDocument | IContentDocument[]> = {}
+
+  async fetch() {
+    this.app = await this.$content('app').fetch()
+  }
+}
+</script>

@@ -31,7 +31,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/toast', '@nuxtjs/axios', '@nuxtjs/pwa'],
+  modules: ['@nuxtjs/toast', '@nuxtjs/axios', '@nuxtjs/pwa', '@nuxt/content'],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},

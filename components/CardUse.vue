@@ -43,8 +43,7 @@ export default class CardUse extends Vue {
 
   @Prop({
     type: String,
-    default:
-      'Tempor aute consectetur esse ut. Ea ipsum anim id consectetur qui nulla. Et ex ut id proident culpa elit occaecat incididunt laboris sit culpa nulla anim.',
+    default: 'FILL_IN',
   })
   readonly description!: string
 }

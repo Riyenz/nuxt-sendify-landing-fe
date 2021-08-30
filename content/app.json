@@ -1,0 +1,86 @@
+{
+  "name": "Riyenz",
+  "installUrl": "https://www.google.com/",
+  "sections": {
+    "featured": {
+      "title": "Dolore culpa tempor duis anim sint.",
+      "description": "Duis nulla excepteur irure voluptate aute laborum excepteur ea in culpa dolore laboris. Fugiat nostrud pariatur occaecat amet labore."
+    },
+    "whyUse": {
+      "description": "Labore nulla ex sit ipsum quis ex duis exercitation. Est enim officia eiusmod eu ad ea velit irure sunt. Exercitation sint aliqua anim anim consequat aliqua exercitation ut ullamco irure exercitation anim.",
+      "cards": [
+        {
+          "image": "https://via.placeholder.com/200x120",
+          "title": "FILL_IN",
+          "description": "Tempor aute consectetur esse ut. Ea ipsum anim id consectetur qui nulla. Et ex ut id proident culpa elit occaecat incididunt laboris sit culpa nulla anim."
+        },
+        {
+          "image": "https://via.placeholder.com/200x120",
+          "title": "FILL_IN",
+          "description": "Tempor aute consectetur esse ut. Ea ipsum anim id consectetur qui nulla. Et ex ut id proident culpa elit occaecat incididunt laboris sit culpa nulla anim."
+        },
+        {
+          "image": "https://via.placeholder.com/200x120",
+          "title": "FILL_IN",
+          "description": "Tempor aute consectetur esse ut. Ea ipsum anim id consectetur qui nulla. Et ex ut id proident culpa elit occaecat incididunt laboris sit culpa nulla anim."
+        },
+        {
+          "image": "https://via.placeholder.com/200x120",
+          "title": "FILL_IN",
+          "description": "Tempor aute consectetur esse ut. Ea ipsum anim id consectetur qui nulla. Et ex ut id proident culpa elit occaecat incididunt laboris sit culpa nulla anim."
+        }
+      ]
+    },
+    "install": {
+      "image": "https://via.placeholder.com/280x210",
+      "title": "Et aliqua anim culpa aliquip exercitation.",
+      "description": "Ea aute aute duis amet amet nostrud. Velit Lorem laborum esse enim consectetur ipsum nisi dolore qui proident dolor consequat."
+    },
+    "pricing": {
+      "title": "Unlimited Access",
+      "extras": ["Unlimited Trackings", "Instant Sync", "Approved by Shopify", "Secured by Paypal", "24h/7 Customer Support"],
+      "price": "9.99"
+    },
+    "features": {
+      "features": [
+        {
+          "title": "User Friendly Dashboard",
+          "description": "Est minim ex labore ipsum duis et amet do eiusmod aute quis sunt dolor duis.",
+          "image": "https://via.placeholder.com/400x600"
+        },
+        {
+          "title": "Back-In-Time Feature",
+          "description": "Est minim ex labore ipsum duis et amet do eiusmod aute quis sunt dolor duis.",
+          "image": "https://via.placeholder.com/400x600"
+        },
+        {
+          "title": "Easy connect",
+          "description": "Est minim ex labore ipsum duis et amet do eiusmod aute quis sunt dolor duis.",
+          "image": "https://via.placeholder.com/400x600"
+        }
+      ]
+    },
+    "faqs": {
+      "supportLink": "https://freshdesk.com/",
+      "description": "The support team is available 24/7 Please get in touch with us by filling out the contact form and our dedicated support team will get back to you. ",
+      "faqs": [
+        {
+          "question": "Lorem ex labore Lorem labore quis labore nostrud id quis esse laboris consectetur?",
+          "answer": "Magna deserunt anim excepteur reprehenderit elit ex ullamco fugiat aliqua reprehenderit culpa aute aliqua minim."
+        },
+        {
+          "question": "Lorem ex labore Lorem labore quis labore nostrud id quis esse laboris consectetur?",
+          "answer": "Magna deserunt anim excepteur reprehenderit elit ex ullamco fugiat aliqua reprehenderit culpa aute aliqua minim."
+        },
+        {
+          "question": "Lorem ex labore Lorem labore quis labore nostrud id quis esse laboris consectetur?",
+          "answer": "Magna deserunt anim excepteur reprehenderit elit ex ullamco fugiat aliqua reprehenderit culpa aute aliqua minim."
+        },
+        {
+          "question": "Lorem ex labore Lorem labore quis labore nostrud id quis esse laboris consectetur?",
+          "answer": "Magna deserunt anim excepteur reprehenderit elit ex ullamco fugiat aliqua reprehenderit culpa aute aliqua minim."
+        }
+      ]
+    }
+  }
+}

@@ -26,22 +26,20 @@
       </div>
     </div>
 
-    <div class="grid grid-cols-2 md:grid-flow-col auto-cols-fr gap-8">
-      <CardUse />
-      <CardUse />
-      <CardUse />
-      <CardUse />
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <CardUse v-for="(card, index) in cards" :key="index" v-bind="card" />
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Getter, Vue } from 'nuxt-property-decorator'
+import { Component, Prop, Vue } from 'nuxt-property-decorator'
+import { IWhyUseCard } from '~/interfaces/app.interface'
 
 @Component({})
 export default class SectionWhyUse extends Vue {
-  @Getter('appName') appName!: string
-  description: string =
-    'Labore nulla ex sit ipsum quis ex duis exercitation. Est enim officia eiusmod eu ad ea velit irure sunt. Exercitation sint aliqua anim anim consequat aliqua exercitation ut ullamco irure exercitation anim.'
+  @Prop({ type: String, default: 'FILL_IN | APP_NAME' }) appName!: string
+  @Prop({ type: String, default: 'FILL_IN | DESCRIPTION' }) description!: string
+  @Prop({ type: Array, default: [] }) cards!: IWhyUseCard[]
 }
 </script>

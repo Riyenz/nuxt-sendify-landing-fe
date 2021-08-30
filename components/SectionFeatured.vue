@@ -38,12 +38,11 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'nuxt-property-decorator'
+import { Component, Prop, Vue } from 'nuxt-property-decorator'
 
 @Component({})
 export default class SectionFeatured extends Vue {
-  title: string = 'Dolore culpa tempor duis anim sint.'
-  description: string =
-    'Duis nulla excepteur irure voluptate aute laborum excepteur ea in culpa dolore laboris. Fugiat nostrud pariatur occaecat amet labore. '
+  @Prop({ type: String, default: 'FILL_IN | TITLE' }) title!: string
+  @Prop({ type: String, default: 'FILL_IN | DESCRIPTION' }) description!: string
 }
 </script>

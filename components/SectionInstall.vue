@@ -1,6 +1,6 @@
 <template>
   <div class="rounded-lg shadow-xl px-10 py-8 flex items-center">
-    <img class="rounded-full mr-10" :src="installImage" alt="" />
+    <img class="rounded-full mr-10" :src="image" alt="" />
     <div class="grid grid-flow-row auto-rows-max gap-6 text-center w-full">
       <h3 class="font-bold text-24px text-secondary">
         {{ title }}
@@ -60,15 +60,15 @@
 </template>
 
 <script lang="ts">
-import { Component, Getter, Vue } from 'nuxt-property-decorator'
+import { Component, Prop, Vue } from 'nuxt-property-decorator'
 
 @Component({})
 export default class SectionInstall extends Vue {
-  @Getter('installUrl') installUrl!: string
+  @Prop({ type: String, default: '/' }) installUrl!: string
+  @Prop({ type: String, default: 'https://via.placeholder.com/280x210' })
+  image!: string
 
-  installImage: string = 'https://via.placeholder.com/280x210'
-  title: string = 'Et aliqua anim culpa aliquip exercitation.'
-  description: string =
-    'Ea aute aute duis amet amet nostrud. Velit Lorem laborum esse enim consectetur ipsum nisi dolore qui proident dolor consequat.'
+  @Prop({ type: String, default: 'FILL_IN | TITLE' }) title!: string
+  @Prop({ type: String, default: 'FILL_IN | DESCRIPTION' }) description!: string
 }
 </script>
