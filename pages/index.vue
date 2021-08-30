@@ -4,6 +4,7 @@
       <SectionFeatured />
       <SectionWhyUse />
       <SectionInstall />
+      <SectionPricing />
     </div>
   </div>
 </template>
