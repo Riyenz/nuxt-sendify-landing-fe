@@ -1,11 +1,12 @@
 <template>
   <div class="font-sans w-screen min-h-screen">
-    <Navbar />
-    <main class="pt-20 px-10 xl:px-24 flex justify-center">
+    <Navbar :installUrl="app.installUrl" />
+    <main class="xl:px-24 flex justify-center">
       <Nuxt class="max-w-1200px w-full" />
     </main>
+    <hr class="border-secondary mb-10" />
     <div class="xl:px-24 flex justify-center">
-      <Footer class="max-w-1200px w-full" />
+      <Footer class="max-w-1320px w-full" />
     </div>
   </div>
 </template>
@@ -18,7 +19,7 @@ import { IApp } from '~/interfaces/app.interface'
 
 @Component({})
 export default class DefaultLayout extends Vue {
-  app: Partial<IApp | IContentDocument | IContentDocument[]> = {}
+  app: Partial<IApp | IContentDocument> = {}
 
   async fetch() {
     this.app = await this.$content('app').fetch()

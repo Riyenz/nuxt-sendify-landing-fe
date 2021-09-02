@@ -19,19 +19,44 @@
     </h3>
     <div
       class="
-        grid grid-cols-2
+        grid grid-cols-1
         bg-secondary
-        rounded-lg
+        md:rounded-lg
         shadow-xl
         px-10
         py-12
         w-full
+        md:grid-cols-2
       "
     >
       <div clas="flex items-center justify-center">
         <h2 class="text-center text-white font-bold text-3xl mb-4">
           {{ title }}
         </h2>
+
+        <div class="flex justify-center mb-4 md:hidden">
+          <p class="text-white text-center text-8xl font-bold">
+            {{ price }}
+          </p>
+          <p
+            class="
+              bg-white
+              text-secondary
+              h-10
+              w-10
+              border border-primary
+              rounded-full
+              text-24px
+              flex-shrink-0
+              text-center
+              flex
+              items-center
+              justify-center
+            "
+          >
+            $
+          </p>
+        </div>
         <div class="mb-10">
           <p
             v-for="extra in extras"
@@ -74,7 +99,7 @@
           />
         </div>
       </div>
-      <div class="flex justify-center items-center">
+      <div class="justify-center items-center hidden md:flex">
         <div class="flex">
           <p class="text-white text-center text-9xl font-bold">
             {{ price }}

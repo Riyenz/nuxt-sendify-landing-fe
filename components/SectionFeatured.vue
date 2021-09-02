@@ -1,12 +1,21 @@
 <template>
-  <div class="w-full rounded-lg shadow-xl grid grid-cols-2 gap-10">
-    <div class="rounded-l-lg px-10 py-8">
+  <div
+    class="
+      w-full
+      rounded-lg
+      md:shadow-xl
+      grid grid-flow-row
+      gap-10
+      md:grid-cols-2
+    "
+  >
+    <div class="rounded-l-lg px-4 py-8 md:px-10">
       <img
         class="mb-4"
         src="@/assets/images/logos/shopify-store--full.svg"
         alt="Shopify Store Full"
       />
-      <h1 class="font-bold text-35px text-black w-96 mb-4">{{ title }}</h1>
+      <h1 class="font-bold text-35px text-black md:w-96 mb-4">{{ title }}</h1>
       <p class="text-23px text-tertiary w-80 mb-10">
         {{ description }}
       </p>
@@ -31,8 +40,12 @@
         </NuxtLink>
       </div>
     </div>
-    <div class="rounded-r-lg bg-gray-400 flex items-center justify-center">
-      <span class="font-bold text-white">FEATURED IMAGE</span>
+    <div class="rounded-r-lg items-center justify-center hidden md:flex">
+      <img
+        class="w-full h-full object-cover"
+        :src="image"
+        alt="Featured Image"
+      />
     </div>
   </div>
 </template>
@@ -44,5 +57,7 @@ import { Component, Prop, Vue } from 'nuxt-property-decorator'
 export default class SectionFeatured extends Vue {
   @Prop({ type: String, default: 'FILL_IN | TITLE' }) title!: string
   @Prop({ type: String, default: 'FILL_IN | DESCRIPTION' }) description!: string
+  @Prop({ type: String, default: 'https://via.placeholder.com/450x600' })
+  image!: string
 }
 </script>

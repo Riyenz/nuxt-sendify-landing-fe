@@ -1,6 +1,16 @@
 <template>
-  <div class="rounded-lg shadow-xl px-10 py-8 flex items-center">
-    <img class="rounded-full mr-10" :src="image" alt="" />
+  <div
+    class="
+      rounded-lg
+      px-10
+      py-8
+      flex
+      items-center
+      flex-col-reverse
+      md:shadow-xl md:flex-row
+    "
+  >
+    <img class="rounded-full md:mr-10" :src="image" alt="" />
     <div class="grid grid-flow-row auto-rows-max gap-6 text-center w-full">
       <h3 class="font-bold text-24px text-secondary">
         {{ title }}
@@ -9,11 +19,13 @@
         {{ description }}
       </p>
 
-      <div class="flex justify-center">
+      <div
+        class="flex justify-center items-center flex-col-reverse md:flex-row"
+      >
         <img
           src="@/assets/images/logos/shopify-store--full.svg"
           alt="Shopify Store Full"
-          class="mr-10"
+          class="mb-6 md:mb-0 md:mr-10"
         />
         <a
           :href="installUrl"
@@ -32,6 +44,8 @@
             group
             bg-opacity-90
             hover:bg-opacity-100
+            mb-6
+            md:mb-0
           "
         >
           <span class="mr-2">Try it Free Now</span>

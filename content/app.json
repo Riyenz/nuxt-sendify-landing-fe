@@ -4,7 +4,8 @@
   "sections": {
     "featured": {
       "title": "Dolore culpa tempor duis anim sint.",
-      "description": "Duis nulla excepteur irure voluptate aute laborum excepteur ea in culpa dolore laboris. Fugiat nostrud pariatur occaecat amet labore."
+      "description": "Duis nulla excepteur irure voluptate aute laborum excepteur ea in culpa dolore laboris. Fugiat nostrud pariatur occaecat amet labore.",
+      "image": "https://via.placeholder.com/600x450"
     },
     "whyUse": {
       "description": "Labore nulla ex sit ipsum quis ex duis exercitation. Est enim officia eiusmod eu ad ea velit irure sunt. Exercitation sint aliqua anim anim consequat aliqua exercitation ut ullamco irure exercitation anim.",
@@ -46,17 +47,17 @@
         {
           "title": "User Friendly Dashboard",
           "description": "Est minim ex labore ipsum duis et amet do eiusmod aute quis sunt dolor duis.",
-          "image": "https://via.placeholder.com/400x600"
+          "image": "https://via.placeholder.com/400"
         },
         {
           "title": "Back-In-Time Feature",
           "description": "Est minim ex labore ipsum duis et amet do eiusmod aute quis sunt dolor duis.",
-          "image": "https://via.placeholder.com/400x600"
+          "image": "https://via.placeholder.com/400"
         },
         {
           "title": "Easy connect",
           "description": "Est minim ex labore ipsum duis et amet do eiusmod aute quis sunt dolor duis.",
-          "image": "https://via.placeholder.com/400x600"
+          "image": "https://via.placeholder.com/400"
         }
       ]
     },

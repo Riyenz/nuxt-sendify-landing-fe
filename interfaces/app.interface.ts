@@ -14,6 +14,7 @@ export interface IApp {
 export interface IFeaturedSection {
   title: string
   description: string
+  image: string
 }
 
 export interface IWhyUseSection {

@@ -8,7 +8,7 @@
       justify-center
       h-20
       shadow-lg
-      px-10
+      px-4
       xl:px-24
       py-2
       fixed
@@ -16,9 +16,9 @@
     "
   >
     <div class="flex items-center justify-between w-full max-w-1200px">
-      <img :src="logoUrl" alt="" />
+      <img src="@/assets/images/logos/site-logo--full.svg" alt="" />
 
-      <div class="grid gap-10 grid-flow-col items-center">
+      <div class="gap-10 grid-flow-col items-center hidden md:grid">
         <a
           v-for="link in links"
           :key="link.href"
@@ -54,35 +54,34 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'nuxt-property-decorator'
+import { Component, Prop, Vue } from 'nuxt-property-decorator'
 
-@Component({
-  data: () => ({
-    logoUrl: require('assets/images/logos/site-logo--full.svg'),
-    links: [
-      {
-        text: 'Features',
-        href: '#features',
-      },
-      {
-        text: 'Pricing',
-        href: '#pricing',
-      },
-      {
-        text: 'Contact US',
-        href: '#contact',
-      },
-      {
-        text: 'Blog',
-        href: '#blog',
-      },
-      {
-        text: 'Start Free',
-        href: 'https://www.google.com/',
-        isButton: true,
-      },
-    ],
-  }),
-})
-export default class Navbar extends Vue {}
+@Component({})
+export default class Navbar extends Vue {
+  @Prop({ type: String, default: '/' }) installUrl!: string
+
+  links = [
+    {
+      text: 'Features',
+      href: '#features',
+    },
+    {
+      text: 'Pricing',
+      href: '#pricing',
+    },
+    {
+      text: 'Contact US',
+      href: '#contact',
+    },
+    {
+      text: 'Blog',
+      href: '#blog',
+    },
+    {
+      text: 'Start Free',
+      href: this.installUrl,
+      isButton: true,
+    },
+  ]
+}
 </script>
