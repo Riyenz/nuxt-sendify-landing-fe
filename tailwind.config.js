@@ -8,9 +8,9 @@ module.exports = {
       colors: {
         transparent: 'transparent',
         black: '#24212b',
-        primary: '#2df8bb',
-        secondary: '#243a5a',
-        tertiary: '#243a5a',
+        primary: '#6E41F3',
+        secondary: '#ECE0FD',
+        tertiary: '#8F6CFB',
       },
       fontSize: {
         '14px': '14px',
