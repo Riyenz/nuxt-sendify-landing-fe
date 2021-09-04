@@ -5,7 +5,7 @@
       <span class="relative z-10">Pricing</span>
       <div
         class="
-          bg-primary
+          bg-secondary
           h-10
           w-28
           rounded
@@ -21,7 +21,7 @@
     <div
       class="
         grid grid-cols-1
-        bg-secondary
+        bg-primary
         md:rounded-lg
         shadow-xl
         px-10
@@ -74,7 +74,7 @@
             class="
               bg-white
               items-center
-              text-secondary text-base
+              text-primary text-base
               font-medium
               rounded-lg
               py-3
@@ -110,7 +110,7 @@
           <p
             class="
               bg-white
-              text-secondary
+              text-primary
               h-10
               w-10
               border border-primary

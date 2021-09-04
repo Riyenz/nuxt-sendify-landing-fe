@@ -11,11 +11,11 @@
       transition
       ease-in-out
       duration-200
-      hover:bg-secondary hover:text-white
+      hover:bg-primary hover:text-white
     "
   >
     <img class="rounded-xl w-full mb-8" :src="image" alt="Card Use Image" />
-    <h3 class="text-24px text-secondary mb-4 group-hover:text-white">
+    <h3 class="text-24px text-primary mb-4 group-hover:text-white">
       {{ title }}
     </h3>
     <p class="text-18px text-gray-700 group-hover:text-white">

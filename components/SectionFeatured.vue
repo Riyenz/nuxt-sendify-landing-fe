@@ -15,8 +15,10 @@
         src="@/assets/images/logos/shopify-store--full.svg"
         alt="Shopify Store Full"
       />
-      <h1 class="font-bold text-35px text-black md:w-96 mb-4">{{ title }}</h1>
-      <p class="text-23px text-tertiary w-80 mb-10">
+      <h1 class="font-bold text-35px text-primary md:w-96 mb-4">
+        {{ title }}
+      </h1>
+      <p class="text-23px text-tertiary mb-10">
         {{ description }}
       </p>
 

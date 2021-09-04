@@ -39,5 +39,12 @@ export default class IndexPage extends Vue {
       app,
     }
   }
+
+  head() {
+    return {
+      title: this.app.name,
+      description: this.app.sections.featured.description,
+    }
+  }
 }
 </script>

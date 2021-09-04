@@ -11,7 +11,7 @@
           <span class="relative z-10">Why use {{ appName }}</span>
           <div
             class="
-              bg-primary
+              bg-secondary
               h-10
               w-52
               rounded

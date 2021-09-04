@@ -12,7 +12,7 @@
   >
     <img class="rounded-full md:mr-10" :src="image" alt="" />
     <div class="grid grid-flow-row auto-rows-max gap-6 text-center w-full">
-      <h3 class="font-bold text-24px text-secondary">
+      <h3 class="font-bold text-24px text-primary">
         {{ title }}
       </h3>
       <p class="text-18px text-gray-700">
@@ -31,8 +31,8 @@
           :href="installUrl"
           target="_blank"
           class="
-            bg-secondary
-            text-primary
+            bg-primary
+            text-secondary
             px-6
             py-2
             rounded-xl

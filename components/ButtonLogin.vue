@@ -26,7 +26,7 @@
           flex
           items-center
           justify-center
-          bg-secondary
+          bg-primary
           p-2
           w-12
           h-12

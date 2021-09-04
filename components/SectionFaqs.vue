@@ -7,7 +7,7 @@
       <span class="relative z-10 md:hidden">FAQ</span>
       <div
         class="
-          bg-primary
+          bg-secondary
           h-10
           w-16
           md:w-96
@@ -64,7 +64,7 @@
     </div>
     <div class="flex flex-col items-center relative">
       <span id="contact" class="absolute -top-72 left-0"></span>
-      <h4 class="font-bold text-20px text-secondary text-center mb-4">
+      <h4 class="font-bold text-20px text-primary text-center mb-4">
         Do you still have a question?
       </h4>
       <p class="text-17px text-center mb-6 max-w-[500px]">
@@ -76,8 +76,8 @@
           items-center
           justify-between
           rounded-xl
-          border border-secondary
-          bg-primary
+          border border-primary
+          bg-secondary
           px-4
           py-2
           bg-opacity-80

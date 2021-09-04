@@ -5,7 +5,7 @@
       <span class="relative z-10">Features</span>
       <div
         class="
-          bg-primary
+          bg-secondary
           h-10
           w-28
           rounded
@@ -42,13 +42,13 @@
             transition
             ease-in-out
             duration-200
-            hover:bg-secondary hover:text-white
+            hover:bg-primary hover:text-white
           "
           v-for="feature in features"
           :key="feature.title"
           :class="{
             'bg-gray-50': selectedFeature.title !== feature.title,
-            'md:bg-secondary md:text-primary pointer-events-none':
+            'md:bg-primary md:text-secondary pointer-events-none':
               selectedFeature.title === feature.title,
           }"
           @click="onClickFeature(feature)"
