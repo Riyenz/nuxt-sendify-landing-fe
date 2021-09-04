@@ -20,8 +20,12 @@
       placeholder="myshop.shopify.com"
     />
     <div class="w-14 h-full flex-shrink-0 flex items-center justify-center">
-      <button
+      <a
+        :href="installUrl"
         class="
+          flex
+          items-center
+          justify-center
           bg-secondary
           p-2
           w-12
@@ -45,9 +49,18 @@
             group-hover:translate-x-0
           "
           src="@/assets/images/icons/arrow-right.svg"
-          alt=""
+          alt="Arrow Right Icon"
         />
-      </button>
+      </a>
     </div>
   </div>
 </template>
+
+<script lang="ts">
+import { Component, Prop, Vue } from 'nuxt-property-decorator'
+
+@Component({})
+export default class ButtonLogin extends Vue {
+  @Prop({ type: String, default: '/' }) installUrl!: string
+}
+</script>

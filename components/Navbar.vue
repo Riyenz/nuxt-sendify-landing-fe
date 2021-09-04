@@ -15,39 +15,62 @@
       z-50
     "
   >
-    <div class="flex items-center justify-between w-full max-w-1200px">
-      <img src="@/assets/images/logos/site-logo--full.svg" alt="" />
+    <div class="flex items-center justify-between w-full max-w-1200px relative">
+      <img
+        class="relative z-40"
+        src="@/assets/images/logos/site-logo--full.svg"
+        alt=""
+      />
 
-      <div class="gap-10 grid-flow-col items-center hidden md:grid">
-        <a
-          v-for="link in links"
-          :key="link.href"
-          href="https://www.google.com/"
-          class="block text-15px font-bold relative group"
+      <div class="block md:hidden relative z-40" @click="onMenuToggle">
+        <img
+          class="transition duration-300 ease-in-out"
           :class="{
-            'text-black': !link.isButton,
-            'px-4 py-3 bg-black text-white rounded-lg bg-opacity-90 transition duration-200 ease-in-out hover:bg-opacity-100':
-              link.isButton,
+            'opacity-0 rotate-90': isMenuOpen,
           }"
-        >
-          {{ link.text }}
-          <div
-            v-if="!link.isButton"
-            class="
-              absolute
-              -bottom-1
-              left-0
-              rounded-full
-              h-1
-              w-0
-              bg-primary
-              transition-width
-              duration-200
-              ease-in-out
-              group-hover:w-full
-            "
-          ></div>
-        </a>
+          src="@/assets/images/icons/menu-icon.svg"
+          alt="Menu Icon"
+        />
+        <img
+          class="transition duration-300 ease-in-out absolute top-0 right-0"
+          :class="{
+            'opacity-100 rotate-0': isMenuOpen,
+            'opacity-0 rotate-90': !isMenuOpen,
+          }"
+          src="@/assets/images/icons/close-icon.svg"
+          alt="Close Icon"
+        />
+      </div>
+
+      <div
+        class="
+          gap-10
+          grid-flow-col
+          items-center
+          md:grid md:relative md:h-auto md:p-0 md:w-auto
+          flex flex-col
+          px-4
+          pb-6
+          pt-40
+          fixed
+          z-30
+          top-0
+          left-0
+          w-full
+          bg-white
+          h-screen
+          text-center
+          transform
+          transition
+          duration-300
+          ease-in-out
+        "
+        :class="{
+          '-translate-y-full md:translate-y-0': !isMenuOpen,
+          'translate-y-0': isMenuOpen,
+        }"
+      >
+        <AppLink v-for="link in links" :key="link.text" :link="link" />
       </div>
     </div>
   </div>
@@ -55,33 +78,46 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'nuxt-property-decorator'
+import { ELinkTypes, ILink } from '~/interfaces/link.interface'
 
 @Component({})
 export default class Navbar extends Vue {
   @Prop({ type: String, default: '/' }) installUrl!: string
+  @Prop({ type: String, default: '/' }) blogUrl!: string
 
-  links = [
+  links: ILink[] = [
     {
       text: 'Features',
       href: '#features',
+      type: ELinkTypes.SECTION,
     },
     {
       text: 'Pricing',
       href: '#pricing',
+      type: ELinkTypes.SECTION,
     },
     {
       text: 'Contact US',
       href: '#contact',
+      type: ELinkTypes.SECTION,
     },
     {
       text: 'Blog',
-      href: '#blog',
+      href: this.blogUrl,
+      type: ELinkTypes.EXTERNAL,
     },
     {
       text: 'Start Free',
       href: this.installUrl,
       isButton: true,
+      type: ELinkTypes.EXTERNAL,
     },
   ]
+
+  isMenuOpen = false
+
+  onMenuToggle() {
+    this.isMenuOpen = !this.isMenuOpen
+  }
 }
 </script>

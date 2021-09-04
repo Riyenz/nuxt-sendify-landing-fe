@@ -22,7 +22,7 @@
 
       <p class="text-15px text-tertiary mb-2">Login With Shopify</p>
 
-      <ButtonLogin class="mb-2" />
+      <ButtonLogin :installUrl="installUrl" class="mb-2" />
 
       <div class="grid grid-flow-col auto-cols-max gap-4 text-14px">
         <NuxtLink
@@ -55,6 +55,7 @@ import { Component, Prop, Vue } from 'nuxt-property-decorator'
 
 @Component({})
 export default class SectionFeatured extends Vue {
+  @Prop({ type: String, default: '/' }) installUrl!: string
   @Prop({ type: String, default: 'FILL_IN | TITLE' }) title!: string
   @Prop({ type: String, default: 'FILL_IN | DESCRIPTION' }) description!: string
   @Prop({ type: String, default: 'https://via.placeholder.com/450x600' })

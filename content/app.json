@@ -1,6 +1,12 @@
 {
   "name": "Riyenz",
   "installUrl": "https://www.google.com/",
+  "blogUrl": "https://www.google.com/",
+  "socials": {
+    "instagram": "https://www.google.com/",
+    "facebook": "https://www.google.com/",
+    "youtube": "https://www.google.com/"
+  },
   "sections": {
     "featured": {
       "title": "Dolore culpa tempor duis anim sint.",

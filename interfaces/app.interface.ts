@@ -1,16 +1,23 @@
 export interface IApp {
   name: string
   installUrl: string
+  blogUrl: string
+  socials: ISocials
   sections: {
     featured: IFeaturedSection
     whyUse: IWhyUseSection
     install: IInstallSection
     features: IFeaturesSection
     pricing: IPricingSection
-    faqs: IFaqsSection
+    faqs: IFaqSection
   }
 }
 
+export interface ISocials {
+  instagram: string
+  facebook: string
+  youtube: string
+}
 export interface IFeaturedSection {
   title: string
   description: string
@@ -51,13 +58,13 @@ export interface IPricingSection {
   price: string
 }
 
-export interface IFaqsSection {
+export interface IFaqSection {
   supportLink: string
   description: string
-  faqs: IFaqs[]
+  faqs: IFaq[]
 }
 
-export interface IFaqs {
+export interface IFaq {
   question: string
   answer: string
 }

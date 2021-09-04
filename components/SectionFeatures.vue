@@ -1,5 +1,6 @@
 <template>
-  <div class="flex flex-col items-center">
+  <div class="flex flex-col items-center relative">
+    <span id="features" class="absolute -top-32 left-0"></span>
     <h3 class="text-center font-bold text-35px mb-6 relative">
       <span class="relative z-10">Features</span>
       <div

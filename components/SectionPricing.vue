@@ -1,5 +1,6 @@
 <template>
-  <div class="flex flex-col items-center">
+  <div class="flex flex-col items-center relative">
+    <span id="pricing" class="absolute -top-32 left-0"></span>
     <h3 class="text-center font-bold text-35px mb-6 relative">
       <span class="relative z-10">Pricing</span>
       <div
@@ -67,7 +68,9 @@
           </p>
         </div>
         <div class="flex justify-center">
-          <button
+          <a
+            :href="installUrl"
+            target="_blank"
             class="
               bg-white
               items-center
@@ -85,7 +88,7 @@
             "
           >
             Start Now Free
-          </button>
+          </a>
         </div>
 
         <p class="text-white text-base text-center font-bold mb-4">
