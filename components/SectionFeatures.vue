@@ -5,7 +5,7 @@
       <span class="relative z-10">Features</span>
       <div
         class="
-          bg-secondary
+          bg-primary-light
           h-10
           w-28
           rounded
@@ -20,35 +20,36 @@
     </h3>
     <div
       class="
-        grid grid-cols-1
-        md:grid-cols-2
-        rounded-lg
+        flex flex-col
+        md:flex-row
+        rounded-xl
         md:shadow-xl
         px-4
-        md:px-10
         py-8
         w-full
         gap-10
+        bg-white
       "
     >
-      <div class="rounded-lg">
+      <div class="flex-1">
         <div
           class="
-            rounded-lg
-            px-6
-            py-8
+            rounded-xl
+            p-4
             mb-4
             cursor-pointer
             transition
             ease-in-out
             duration-200
-            hover:bg-primary hover:text-white
+            text-secondary
+            bg-primary-light
+            hover:bg-primary-black hover:text-white
           "
           v-for="feature in features"
           :key="feature.title"
           :class="{
             'bg-gray-50': selectedFeature.title !== feature.title,
-            'md:bg-primary md:text-secondary pointer-events-none':
+            'md:bg-primary-black md:text-white pointer-events-none':
               selectedFeature.title === feature.title,
           }"
           @click="onClickFeature(feature)"
@@ -56,17 +57,17 @@
           <p class="text-2xl font-bold mb-2">{{ feature.title }}</p>
           <p class="text-lg mb-6 mb:mb-0">{{ feature.description }}</p>
           <img
-            class="rounded-lg w-full md:hidden"
+            class="rounded-xl w-full md:hidden"
             :src="feature.image"
             :alt="feature.title"
           />
         </div>
       </div>
 
-      <div class="items-center justify-center hidden md:flex">
+      <div class="flex-2 flex-col items-center justify-center hidden md:flex">
         <img
           v-if="selectedFeature"
-          class="rounded-lg w-full"
+          class="rounded-xl w-full"
           :src="selectedFeature.image"
           alt=""
         />

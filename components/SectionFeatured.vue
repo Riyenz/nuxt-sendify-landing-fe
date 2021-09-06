@@ -9,20 +9,20 @@
       md:grid-cols-2
     "
   >
-    <div class="rounded-l-lg px-4 py-8 md:px-10">
+    <div class="relative z-10rounded-l-lg px-4 py-8 md:px-10">
       <img
         class="mb-4"
         src="@/assets/images/logos/shopify-store--full.svg"
         alt="Shopify Store Full"
       />
-      <h1 class="font-bold text-35px text-primary md:w-96 mb-4">
+      <h1 class="font-bold text-35px text-black md:w-96 mb-4">
         {{ title }}
       </h1>
-      <p class="text-23px text-tertiary mb-10">
+      <p class="text-23px text-black mb-10">
         {{ description }}
       </p>
 
-      <p class="text-15px text-tertiary mb-2">Login With Shopify</p>
+      <p class="text-15px text-black mb-2">Login With Shopify</p>
 
       <ButtonLogin :installUrl="installUrl" class="mb-2" />
 
@@ -42,7 +42,17 @@
         </NuxtLink>
       </div>
     </div>
-    <div class="rounded-r-lg items-center justify-center hidden md:flex">
+    <div
+      class="
+        relative
+        z-10
+        rounded-r-lg
+        items-center
+        justify-center
+        hidden
+        md:flex
+      "
+    >
       <img
         class="w-full h-full object-cover"
         :src="image"

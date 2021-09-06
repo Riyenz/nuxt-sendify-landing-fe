@@ -13,6 +13,7 @@
       py-2
       fixed
       z-50
+      rounded-b-3xl
     "
   >
     <div class="flex items-center justify-between w-full max-w-1200px relative">

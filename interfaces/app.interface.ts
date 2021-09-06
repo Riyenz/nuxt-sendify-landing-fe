@@ -1,5 +1,6 @@
 export interface IApp {
   name: string
+  year: string
   installUrl: string
   blogUrl: string
   socials: ISocials
@@ -56,6 +57,7 @@ export interface IPricingSection {
   title: string
   extras: string[]
   price: string
+  dayTrial: string
 }
 
 export interface IFaqSection {

@@ -5,7 +5,7 @@
       <span class="relative z-10">Pricing</span>
       <div
         class="
-          bg-secondary
+          bg-primary-light
           h-10
           w-28
           rounded
@@ -21,7 +21,9 @@
     <div
       class="
         grid grid-cols-1
-        bg-primary
+        bg-gradient-to-b
+        from-primary
+        to-primary-dark
         md:rounded-lg
         shadow-xl
         px-10
@@ -92,15 +94,8 @@
         </div>
 
         <p class="text-white text-base text-center font-bold mb-4">
-          30 days trial
+          {{ dayTrial }} day trial
         </p>
-        <div class="flex justify-center">
-          <img
-            class="mb-4"
-            src="@/assets/images/logos/shopify-find--white.svg"
-            alt="Shopify Store Full"
-          />
-        </div>
       </div>
       <div class="justify-center items-center hidden md:flex">
         <div class="flex">
@@ -140,5 +135,6 @@ export default class Pricing extends Vue {
   @Prop({ type: String, default: 'FILL_IN | TITLE' }) title!: string
   @Prop({ type: Array, default: [] }) extras!: string[]
   @Prop({ type: String, default: 'FILL_IN | PRICE' }) price!: string
+  @Prop({ type: String, default: 'FILL_IN | DAY_TRIAL' }) dayTrial!: string
 }
 </script>

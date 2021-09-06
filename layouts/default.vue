@@ -1,12 +1,26 @@
 <template>
-  <div class="font-sans w-full max-w-screen overflox-x-hidden min-h-screen">
+  <div
+    class="
+      font-sans
+      w-full
+      max-w-screen
+      overflox-x-hidden
+      min-h-screen
+      bg-[#F7F9FB]
+    "
+  >
     <Navbar :installUrl="app.installUrl" :blogUrl="app.blogUrl" />
     <main class="xl:px-24 flex justify-center">
       <Nuxt class="max-w-1200px w-full" />
     </main>
-    <hr class="border-secondary mb-10" />
+    <hr class="border-primary mb-10" />
     <div class="xl:px-24 flex justify-center">
-      <Footer :socials="app.socials" class="max-w-[1320px] w-full" />
+      <Footer
+        :socials="app.socials"
+        :app-name="app.name"
+        :year="app.year"
+        class="max-w-[1320px] w-full"
+      />
     </div>
   </div>
 </template>

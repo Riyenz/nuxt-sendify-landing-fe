@@ -3,7 +3,7 @@
     <div
       class="rounded-lg shadow-xl py-4 px-10 items-center justify-center mb-4"
     >
-      <div class="md:flex justify-between border-b border-secondary mb-6">
+      <div class="md:flex justify-between border-b border-primary mb-6">
         <div class="flex justify-center">
           <img
             class="mb-6"
@@ -83,7 +83,7 @@
         </div>
       </div>
       <p class="text-center text-sm text-gray-400">
-        © 2020, Logoipsum All Rights Reserved.
+        © {{ year }}, {{ appName }} All Rights Reserved.
       </p>
     </div>
   </div>
@@ -96,6 +96,8 @@ import { ELinkTypes, ILink } from '~/interfaces/link.interface'
 
 @Component({})
 export default class Footer extends Vue {
+  @Prop({ type: String, default: 'FILL_IN | APP_NAME' }) appName!: string
+  @Prop({ type: String, default: 'FILL_IN | YEAR' }) year!: string
   @Prop({ type: Object, default: () => ({}) }) socials!: ISocials
 
   links: ILink[] = [

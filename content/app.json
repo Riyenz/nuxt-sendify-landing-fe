@@ -1,5 +1,6 @@
 {
   "name": "Sendify",
+  "year": "2021",
   "installUrl": "https://www.google.com/",
   "blogUrl": "https://www.google.com/",
   "socials": {
@@ -10,7 +11,7 @@
   "sections": {
     "featured": {
       "title": "Sendify",
-      "description": "The Easiest Way To Start Generating More  Online Sales With Text Message Marketing A cost-effective tool to automate your customer’s communication and a chance to skyrocket your sales revenues and improve your customers experience significantly.",
+      "description": "Whether you’re sending a global marketing campaign to millions or engaging customers around the corner, the use of Text Marketing  is a highly effective and friction-free way to communicate with your customer.",
       "image": "https://via.placeholder.com/600x450"
     },
     "whyUse": {
@@ -39,31 +40,32 @@
       ]
     },
     "install": {
-      "image": "https://via.placeholder.com/280x210",
-      "title": "Et aliqua anim culpa aliquip exercitation.",
-      "description": "Ea aute aute duis amet amet nostrud. Velit Lorem laborum esse enim consectetur ipsum nisi dolore qui proident dolor consequat."
+      "image": "/images/install-image.svg",
+      "title": "Get Ready to Save Time and Start Accelerating your Business with Us.",
+      "description": "Position your campaign to a solid foundation and keep customer’s loyalty while expanding your brand’s reach globally. Sendify commits to leap your store to a higher new level."
     },
     "pricing": {
       "title": "Unlimited Access",
       "extras": ["Unlimited Trackings", "Instant Sync", "Approved by Shopify", "Secured by Paypal", "24h/7 Customer Support"],
-      "price": "39.37"
+      "price": "39.37",
+      "dayTrial": "3"
     },
     "features": {
       "features": [
         {
           "title": "Easy to Install",
-          "description": "That’s Right! We keep it simple and on point. Sendify values the importance of your time and intends to help you automate your text message marketing campaign in no time. Simply login using your email address and your keys and prepare to take your store to a high new level.",
-          "image": "https://via.placeholder.com/400"
+          "description": "Sendify values simple concepts in running your automated SMS marketing campaign instantly. Start today with our easy to use app and enhance your  customers’ engagements. ",
+          "image": "/images/onboarding-sendify.png"
         },
         {
           "title": "SMS Template",
-          "description": "Our App allows users to effortlessly produce sms campaigns while using your saved time to other important business tasks! Indeed a win-win solution. Sendify helps you catch your customer’s attention easily while allowing you to create and save  personalized sms marketing content based on your preferred niche and target audiences.",
-          "image": "https://via.placeholder.com/400"
+          "description": "Our App guides you to communicate with your customers easily and instantly while allowing you  to catch your customer’s attention right away by customizing the SMS content based on your preferred niche and target audience.",
+          "image": "/images/sms-sent-sendify.png"
         },
         {
           "title": "Full Managing Audience",
           "description": "Sendify understands that sending campaigns to the right people creates an impact toward business growth. That is why, Sendify makes sure that users can easily fine-tune the target audience by simply adding and removing contact details.",
-          "image": "https://via.placeholder.com/400"
+          "image": "/images/contacts-sendify.png"
         }
       ]
     },

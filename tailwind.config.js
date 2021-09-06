@@ -7,10 +7,16 @@ module.exports = {
       },
       colors: {
         transparent: 'transparent',
-        black: '#24212b',
-        primary: '#6E41F3',
-        secondary: '#ECE0FD',
-        tertiary: '#8F6CFB',
+        black: '#24212B',
+        primary: {
+          black: '#32294A',
+          dark: '#6F42F3',
+          DEFAULT: '#A183FE',
+          light: '#F0E8FE',
+        },
+        secondary: '#515C72',
+        tertiary: '#00D98B',
+        ambient: '#94C5FF',
       },
       fontSize: {
         '14px': '14px',

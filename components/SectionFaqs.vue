@@ -7,7 +7,7 @@
       <span class="relative z-10 md:hidden">FAQ</span>
       <div
         class="
-          bg-secondary
+          bg-primary-light
           h-10
           w-16
           md:w-96
@@ -77,7 +77,7 @@
           justify-between
           rounded-xl
           border border-primary
-          bg-secondary
+          bg-primary-light
           px-4
           py-2
           bg-opacity-80

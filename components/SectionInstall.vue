@@ -7,35 +7,30 @@
       flex
       items-center
       flex-col-reverse
-      md:shadow-xl md:flex-row
+      bg-ambient
+      md:shadow-xl md:flex-row md:px-20
     "
   >
-    <img class="rounded-full md:mr-10" :src="image" alt="" />
+    <img class="md:mr-10" :src="image" alt="" />
     <div class="grid grid-flow-row auto-rows-max gap-6 text-center w-full">
-      <h3 class="font-bold text-24px text-primary">
+      <h3 class="font-bold text-24px text-white">
         {{ title }}
       </h3>
-      <p class="text-18px text-gray-700">
+      <p class="text-18px text-white">
         {{ description }}
       </p>
 
-      <div
-        class="flex justify-center items-center flex-col-reverse md:flex-row"
-      >
-        <img
-          src="@/assets/images/logos/shopify-store--full.svg"
-          alt="Shopify Store Full"
-          class="mb-6 md:mb-0 md:mr-10"
-        />
+      <div class="flex justify-center items-center">
         <a
           :href="installUrl"
           target="_blank"
           class="
-            bg-primary
-            text-secondary
+            bg-tertiary
+            text-white
             px-6
             py-2
             rounded-xl
+            shadow-xl
             flex
             transform
             transition
@@ -43,7 +38,7 @@
             ease-in-out
             group
             bg-opacity-90
-            hover:bg-opacity-100
+            hover:bg-opacity-100 hover:shadow-lg
             mb-6
             md:mb-0
           "
@@ -55,6 +50,7 @@
               items-center
               justify-center
               bg-white
+              text-black
               w-6
               h-6
               rounded-full
