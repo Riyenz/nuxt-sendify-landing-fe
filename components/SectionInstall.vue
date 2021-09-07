@@ -1,7 +1,7 @@
 <template>
   <div
     class="
-      rounded-lg
+      md:rounded-lg
       px-10
       py-8
       flex

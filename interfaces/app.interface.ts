@@ -26,12 +26,13 @@ export interface IFeaturedSection {
 }
 
 export interface IWhyUseSection {
+  image: string
   description: string
   cards: IWhyUseCard[]
 }
 
 export interface IWhyUseCard {
-  image: string
+  icon: string
   title: string
   description: string
 }
