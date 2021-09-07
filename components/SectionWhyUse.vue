@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full px-4 md:px-10">
+  <div class="w-full px-4">
     <div class="grid grid-flow-col auto-cols-max gap-4 mb-10">
       <img
         class="mt-1 hidden md:block"
@@ -29,9 +29,13 @@
         </p>
       </div>
     </div>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-      <CardUse v-for="(card, index) in cards" :key="index" v-bind="card" />
+    <div class="md:grid grid-cols-2 gap-8">
+      <div class="flex justify-center mb-8 md:mb-0">
+        <img :src="image" alt="" />
+      </div>
+      <div class="grid">
+        <CardUse v-for="(card, index) in cards" :key="index" v-bind="card" />
+      </div>
     </div>
   </div>
 </template>
@@ -44,6 +48,7 @@ import { IWhyUseCard } from '~/interfaces/app.interface'
 export default class SectionWhyUse extends Vue {
   @Prop({ type: String, default: 'FILL_IN | APP_NAME' }) appName!: string
   @Prop({ type: String, default: 'FILL_IN | DESCRIPTION' }) description!: string
+  @Prop({ type: String, default: '/' }) image!: string
   @Prop({ type: Array, default: [] }) cards!: IWhyUseCard[]
 }
 </script>

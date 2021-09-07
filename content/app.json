@@ -15,25 +15,26 @@
       "image": "https://via.placeholder.com/600x450"
     },
     "whyUse": {
+      "image": "/images/why-use-image.svg",
       "description": "Whether you are sending a Global Campaign to millions or engaging customers around the corner, the use of text Marketing is a highly effective and friction-free way to communicate with customers.",
       "cards": [
         {
-          "image": "https://via.placeholder.com/200x120",
+          "icon": "/images/icon-personal.svg",
           "title": "It’s Personal",
           "description": "It provides an effective touch point to increase engagements with your customers and helps your business create traction"
         },
         {
-          "image": "https://via.placeholder.com/200x120",
+          "icon": "/images/icon-simple.svg",
           "title": "It's Simple",
           "description": "Keep it short and sharp! The best way to do effective marketing is through SMS campaigns. We all know that a brief message can help you move the conversation along."
         },
         {
-          "image": "https://via.placeholder.com/200x120",
+          "icon": "/images/icon-targeted.svg",
           "title": "Its highly targeted",
           "description": "Reaching out to people that you already have a relationship with helps increase the percentage of sales returns. Start from your great foundation"
         },
         {
-          "image": "https://via.placeholder.com/200x120",
+          "icon": "/images/icon-outperform.svg",
           "title": "Outperforms other channels",
           "description": "It remains the hottest communications method towards engaging customers as it provens to have higher open rates to delivery. Also, an easy way to relay your important information directly to your customer's device."
         }
