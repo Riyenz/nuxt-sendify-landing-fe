@@ -4,23 +4,30 @@
       group
       rounded-xl
       px-4
-      py-6
-      shadow-spread
-      text-center
+      py-4
       h-full
+      cursor-pointer
       transition
       ease-in-out
       duration-200
       hover:bg-primary hover:text-white
     "
   >
-    <img class="rounded-xl w-full mb-8" :src="image" alt="Card Use Image" />
-    <h3 class="text-24px text-primary mb-4 group-hover:text-white">
-      {{ title }}
-    </h3>
-    <p class="text-18px text-gray-700 group-hover:text-white">
-      {{ description }}
-    </p>
+    <div class="flex flex-cols-2 gap-4">
+      <div>
+        <img class="rounded-xl w-full mb-8" :src="image" alt="Card Use Image" />
+      </div>
+      <div>
+        <h3
+          class="text-base text-primary font-bold mb-2 group-hover:text-white"
+        >
+          {{ title }}
+        </h3>
+        <p class="text-base text-gray-700 group-hover:text-white">
+          {{ description }}
+        </p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -31,7 +38,7 @@ import { Component, Prop, Vue } from 'nuxt-property-decorator'
 export default class CardUse extends Vue {
   @Prop({
     type: String,
-    default: 'https://via.placeholder.com/200x120',
+    default: 'https://via.placeholder.com/60x60',
   })
   readonly image!: string
 

@@ -29,9 +29,13 @@
         </p>
       </div>
     </div>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-      <CardUse v-for="(card, index) in cards" :key="index" v-bind="card" />
+    <div class="md:grid grid-cols-2 gap-8">
+      <div class="flex justify-center">
+        <img class="" src="@/assets/images/why-use-image.svg" alt="" />
+      </div>
+      <div class="grid">
+        <CardUse v-for="(card, index) in cards" :key="index" v-bind="card" />
+      </div>
     </div>
   </div>
 </template>
