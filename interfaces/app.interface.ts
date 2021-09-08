@@ -3,6 +3,7 @@ export interface IApp {
   year: string
   installUrl: string
   blogUrl: string
+  twitterUsername: string
   socials: ISocials
   sections: {
     featured: IFeaturedSection

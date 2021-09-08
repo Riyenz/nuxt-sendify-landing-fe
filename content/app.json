@@ -3,6 +3,7 @@
   "year": "2021",
   "installUrl": "https://www.google.com/",
   "blogUrl": "https://www.google.com/",
+  "twitterUsername": "@Sendify_app",
   "socials": {
     "instagram": "https://www.google.com/",
     "facebook": "https://www.google.com/",
@@ -56,17 +57,17 @@
         {
           "title": "Easy to Install",
           "description": "Sendify values simple concepts in running your automated SMS marketing campaign instantly. Start today with our easy to use app and enhance your  customers’ engagements. ",
-          "image": "/images/onboarding-sendify.png"
+          "image": "/images/features-onboarding-sendify.webp"
         },
         {
           "title": "SMS Template",
           "description": "Our App guides you to communicate with your customers easily and instantly while allowing you  to catch your customer’s attention right away by customizing the SMS content based on your preferred niche and target audience.",
-          "image": "/images/sms-sent-sendify.png"
+          "image": "/images/features-sms-sent-sendify.webp"
         },
         {
           "title": "Full Managing Audience",
           "description": "Sendify understands that sending campaigns to the right people creates an impact toward business growth. That is why, Sendify makes sure that users can easily fine-tune the target audience by simply adding and removing contact details.",
-          "image": "/images/contacts-sendify.png"
+          "image": "/images/features-contacts-sendify.webp"
         }
       ]
     },
