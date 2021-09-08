@@ -76,7 +76,7 @@
             class="
               bg-white
               items-center
-              text-primary text-base
+              text-primary-black text-base
               font-medium
               rounded-lg
               py-3
@@ -94,7 +94,7 @@
         </div>
 
         <p class="text-white text-base text-center font-bold mb-4">
-          {{ dayTrial }} day trial
+          {{ dayTrial }} Day trial
         </p>
       </div>
       <div class="justify-center items-center hidden md:flex">

@@ -48,7 +48,7 @@
     "pricing": {
       "title": "Unlimited Access",
       "extras": ["Unlimited Trackings", "Instant Sync", "Approved by Shopify", "Secured by Paypal", "24h/7 Customer Support"],
-      "price": "39.37",
+      "price": "33.19",
       "dayTrial": "3"
     },
     "features": {
@@ -72,7 +72,7 @@
     },
     "faqs": {
       "supportLink": "https://freshdesk.com/",
-      "description": "The support team is available 24/7 Please get in touch with us by filling out the contact form and our dedicated support team will get back to you. ",
+      "description": "The Sendify support team is available 24/7 Please get in touch with us by filling out the contact form and our dedicated support team will get back to you.",
       "faqs": [
         {
           "question": "Does Sendify work for me?",
