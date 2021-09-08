@@ -8,7 +8,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { property: 'og:type', content: 'website' },
     ],
     link: [
       { rel: 'icon', type: 'image/svg+xml', size: 'any', href: '/favicon.svg' },
@@ -33,6 +33,12 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxtjs/svg',
   ],
+
+  tailwindcss: {
+    configPath: 'tailwind.config.js',
+    exposeConfig: true,
+    config: {},
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ['@nuxtjs/toast', '@nuxtjs/axios', '@nuxtjs/pwa', '@nuxt/content'],

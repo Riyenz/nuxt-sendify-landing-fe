@@ -11,7 +11,7 @@
   >
     <Navbar :installUrl="app.installUrl" :blogUrl="app.blogUrl" />
     <main class="xl:px-24 flex justify-center">
-      <Nuxt class="max-w-1200px w-full" />
+      <Nuxt class="max-w-[1320px] w-full md:px-8" />
     </main>
     <hr class="border-primary mb-10" />
     <div class="xl:px-24 flex justify-center">

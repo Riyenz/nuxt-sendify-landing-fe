@@ -43,7 +43,37 @@ export default class IndexPage extends Vue {
   head() {
     return {
       title: this.app.name,
-      description: this.app.sections.featured.description,
+      meta: [
+        {
+          name: 'description',
+          content: this.app.sections.featured.description,
+        },
+        /** Open Graph Meta Tags */
+        { property: 'og:type', content: this.app.name },
+        { property: 'og:title', content: this.app.sections.featured.title },
+        {
+          property: 'og:description',
+          content: this.app.sections.featured.description,
+        },
+        { property: 'og:image', content: this.app.sections.featured.image },
+        { property: 'og:site_name', content: this.app.name },
+
+        /** Twitter Meta Tags */
+        {
+          property: 'twitter:title',
+          content: this.app.sections.featured.title,
+        },
+        {
+          property: 'twitter:description',
+          content: this.app.sections.featured.description,
+        },
+        {
+          property: 'twitter:image',
+          content: this.app.sections.featured.image,
+        },
+        { property: 'twitter:site', content: this.app.twitterUsername },
+        { property: 'twitter:creator', content: this.app.twitterUsername },
+      ],
     }
   }
 }

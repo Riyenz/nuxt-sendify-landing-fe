@@ -1,7 +1,14 @@
 <template>
   <div class="px-4">
     <div
-      class="rounded-lg shadow-xl py-4 px-10 items-center justify-center mb-4"
+      class="
+        md:rounded-lg md:shadow-xl
+        py-4
+        md:px-10
+        items-center
+        justify-center
+        mb-4
+      "
     >
       <div class="md:flex justify-between border-b border-primary mb-6">
         <div class="flex justify-center">
@@ -11,7 +18,18 @@
             alt="Site Logo Full"
           />
         </div>
-        <div class="grid grid-flow-col gap-6 items-center mb-6">
+        <div
+          class="
+            grid
+            auto-cols-max
+            grid-flow-col
+            gap-4
+            justify-center
+            md:gap-6
+            items-center
+            mb-6
+          "
+        >
           <p class="text-base font-semibold cursor-pointer">Follow Us</p>
           <a
             v-if="socials.instagram"
@@ -69,16 +87,7 @@
         </div>
       </div>
       <div class="justify-center flex">
-        <div
-          class="
-            grid
-            md:gap-16 md:grid-flow-col
-            grid-cols-2
-            gap-3
-            items-center
-            mb-10
-          "
-        >
+        <div class="grid md:gap-16 grid-flow-col gap-3 items-center mb-10">
           <AppLink v-for="link in links" :key="link.text" :link="link" />
         </div>
       </div>
