@@ -1,5 +1,5 @@
 <template>
-  <ContainerSection class="flex flex-col items-center relative">
+  <ContainerSection class="flex flex-col items-center relative w-full">
     <span id="pricing" class="absolute -top-32 left-0"></span>
     <h3 class="text-center font-bold text-35px mb-6 relative">
       <span class="relative z-10">Pricing</span>
