@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full px-4">
+  <ContainerSection class="w-full px-4">
     <div class="grid grid-flow-col auto-cols-max gap-4 mb-10">
       <img
         class="mt-1 hidden md:block"
@@ -37,7 +37,7 @@
         <CardUse v-for="(card, index) in cards" :key="index" v-bind="card" />
       </div>
     </div>
-  </div>
+  </ContainerSection>
 </template>
 
 <script lang="ts">

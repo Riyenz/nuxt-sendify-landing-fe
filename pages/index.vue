@@ -1,5 +1,5 @@
 <template>
-  <div class="py-32">
+  <div>
     <div class="grid grid-flow-row gap-40">
       <SectionFeatured
         v-bind="app.sections.featured"

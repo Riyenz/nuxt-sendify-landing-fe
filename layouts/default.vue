@@ -10,8 +10,8 @@
     "
   >
     <Navbar :installUrl="app.installUrl" :blogUrl="app.blogUrl" />
-    <main class="xl:px-24 flex justify-center">
-      <Nuxt class="max-w-[1320px] w-full md:px-8" />
+    <main class="xl:px-24 flex justify-center pt-20">
+      <Nuxt class="w-full" />
     </main>
     <hr class="border-primary mb-10" />
     <div class="xl:px-24 flex justify-center">
@@ -30,9 +30,11 @@ import { Component, Vue } from 'nuxt-property-decorator'
 
 import { IContentDocument } from '@nuxt/content/types/content'
 import { IApp } from '~/interfaces/app.interface'
+import { theme } from '~/tailwind.config'
 
 @Component({})
 export default class DefaultLayout extends Vue {
+  theme = theme
   app: Partial<IApp | IContentDocument> = {}
 
   async fetch() {

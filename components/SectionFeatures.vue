@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center relative">
+  <ContainerSection class="flex flex-col items-center relative">
     <span id="features" class="absolute -top-32 left-0"></span>
     <h3 class="text-center font-bold text-35px mb-6 relative">
       <span class="relative z-10">Features</span>
@@ -22,7 +22,9 @@
       class="
         relative
         flex flex-col
-        md:flex-row md:rounded-xl md:shadow-xl
+        xl:flex-row
+        md:rounded-xl
+        xl:shadow-xl
         px-4
         py-8
         w-full
@@ -47,18 +49,18 @@
           v-for="feature in features"
           :key="feature.title"
           :class="{
-            'md:bg-gray-50': selectedFeature.title !== feature.title,
-            'md:bg-primary-black md:text-white pointer-events-none':
+            'xl:bg-gray-50': selectedFeature.title !== feature.title,
+            'xl:bg-primary-black xl:text-white pointer-events-none':
               selectedFeature.title === feature.title,
           }"
-          @click="onClickFeature(feature)"
+          @click="setSelectedFeature(feature)"
         >
           <p class="text-26px font-bold mb-2">{{ feature.title }}</p>
           <p class="text-17px mb-6 leading-tight mb:mb-0">
             {{ feature.description }}
           </p>
           <img
-            class="rounded-xl w-full md:hidden"
+            class="rounded-xl w-full xl:hidden"
             :src="feature.image"
             :alt="feature.title"
           />
@@ -73,10 +75,10 @@
           items-center
           justify-end
           hidden
-          md:flex
+          xl:flex
         "
       >
-        <div class="absolute top-0 right-0 hidden md:grid grid-flow-col gap-4">
+        <div class="absolute top-0 right-0 hidden xl:grid grid-flow-col gap-4">
           <span
             v-for="feature in features"
             :key="feature.title"
@@ -101,7 +103,7 @@
         />
       </div>
 
-      <div class="absolute bottom-0 right-0 hidden md:block z-0">
+      <div class="absolute bottom-0 right-0 hidden xl:block z-0">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="820.004"
@@ -109,8 +111,6 @@
           viewBox="0 0 820.004 620.094"
         >
           <path
-            id="Path_40872"
-            data-name="Path 40872"
             d="M820,105.14V594.524c0,14.123-12.181,25.571-27.22,25.571H24.834A446.491,446.491,0,0,1,0,472.973C0,211.757,225.414,0,503.477,0,623.4,0,733.527,39.387,820,105.14Z"
             :fill="theme.extend.colors.ambient"
             fill-rule="evenodd"
@@ -118,11 +118,11 @@
         </svg>
       </div>
     </div>
-  </div>
+  </ContainerSection>
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'nuxt-property-decorator'
+import { Component, Prop, Vue, Watch } from 'nuxt-property-decorator'
 import { IFeature } from '~/interfaces/app.interface'
 import { theme } from '~/tailwind.config'
 
@@ -133,12 +133,13 @@ export default class Features extends Vue {
   theme = theme
   selectedFeature: Partial<IFeature> = {}
 
-  mounted() {
-    this.selectedFeature = this.features[0]
+  setSelectedFeature(feature: IFeature): void {
+    this.selectedFeature = feature
   }
 
-  onClickFeature(feature: IFeature): void {
-    this.selectedFeature = feature
+  @Watch('features', { immediate: true })
+  initializeSelected() {
+    this.setSelectedFeature(this.features[0])
   }
 }
 </script>
