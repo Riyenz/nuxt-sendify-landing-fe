@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="75" height="77" viewBox="0 0 75 77">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#a183fe" />
+      <stop offset="1" stop-color="#6f42f3" />
+    </linearGradient>
+    <filter id="Rectangle_9848" x="0" y="0" width="75" height="77" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha" />
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feFlood flood-color="#cbdfd5" flood-opacity="0.447" />
+      <feComposite operator="in" in2="blur" />
+      <feComposite in="SourceGraphic" />
+    </filter>
+  </defs>
+  <g id="Group_47496" data-name="Group 47496" transform="translate(9 6)">
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Rectangle_9848)">
+      <rect id="Rectangle_9848-2" data-name="Rectangle 9848" width="57" height="59" rx="18" transform="translate(9 6)" fill="url(#linear-gradient)" />
+    </g>
+    <g id="Group_47495" data-name="Group 47495" transform="translate(19.153 6.437)">
+      <path id="Path_40908" data-name="Path 40908" d="M98.416,40.712V4.987h1.069a.712.712,0,0,0,.712-.712V.712A.712.712,0,0,0,99.484,0H95.922a.712.712,0,0,0-.712.712V4.275a.712.712,0,0,0,.712.712h1.069V40.712a2.494,2.494,0,1,0,1.425,0Z" transform="translate(-87.729)" fill="#fff" />
+      <g id="Group_47494" data-name="Group 47494" transform="translate(0 13.89)">
+        <path id="Path_40908-2" data-name="Path 40908" d="M12.909,50.751a.712.712,0,0,0-.645-.413H9.575V41.4l.588.588a.713.713,0,0,0,1.008-1.008L9.39,39.2a.712.712,0,0,0-1.008,0L6.6,40.983a.713.713,0,1,0,1.008,1.008l.541-.541v9.6a.712.712,0,0,0,.712.712h1.874L6.412,56.878A.712.712,0,1,0,7.5,57.8l5.318-6.291a.712.712,0,0,0,.093-.755Z" transform="translate(-6.219 -38.993)" fill="#fff" />
+        <path id="Path_40910" data-name="Path 40910" d="M48.272,50.334h-2.7V41.4l.588.588a.713.713,0,0,0,1.008-1.008L45.39,39.2a.712.712,0,0,0-1.008,0L42.6,40.983a.713.713,0,0,0,1.008,1.008l.541-.541v9.6a.712.712,0,0,0,.712.712h1.874l-4.324,5.119A.712.712,0,1,0,43.5,57.8l5.318-6.291a.712.712,0,0,0-.545-1.172Z" transform="translate(-29.396 -38.993)" fill="#fff" />
+      </g>
+    </g>
+  </g>
+</svg>

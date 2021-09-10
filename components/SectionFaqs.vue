@@ -76,17 +76,16 @@
           items-center
           justify-between
           rounded-xl
-          border border-primary
-          bg-primary-light
-          px-4
+          bg-white
+          shadow-md
+          px-6
           py-2
-          bg-opacity-80
-          hover:bg-opacity-100
+          hover:opacity-80
         "
         :href="supportLink"
         target="_blank"
       >
-        <span class="mr-2">Get Support</span>
+        <span class="mr-2 text-primary-dark">Get Support</span>
         <img src="@/assets/images/icons/support-icon.svg" alt="" />
       </a>
     </div>

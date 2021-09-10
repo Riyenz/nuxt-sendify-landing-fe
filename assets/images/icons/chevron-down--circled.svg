@@ -1,1 +1,4 @@
-<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm5.247 8l-5.247 6.44-5.263-6.44-.737.678 6 7.322 6-7.335-.753-.665z"/></svg>
+<svg id="Component_91_6" data-name="Component 91 – 6" xmlns="http://www.w3.org/2000/svg" width="26.001" height="26" viewBox="0 0 26.001 26">
+  <ellipse id="Close_Button:_Base" data-name="Close Button: Base" cx="13.001" cy="13" rx="13.001" ry="13" fill="#f0e8fe"/>
+  <path id="Path_41159" data-name="Path 41159" d="M8.255,8.251,13.008,13l4.753-4.753" transform="translate(0 2)" fill="none" stroke="blue" stroke-linecap="round" stroke-width="1.5"/>
+</svg>
