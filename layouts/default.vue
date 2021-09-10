@@ -9,6 +9,18 @@
       bg-[#F7F9FB]
     "
   >
+    <svg
+      class="absolute top-0 left-0 z-0 w-full transform"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1399 632.076"
+    >
+      <g transform="translate(0 -47.811)">
+        <path
+          d="M0,47.811H1399V679.887L0,555.652Z"
+          :fill="theme.extend.colors.ambient"
+        />
+      </g>
+    </svg>
     <Navbar :installUrl="app.installUrl" :blogUrl="app.blogUrl" />
     <main class="xl:px-24 flex justify-center pt-20">
       <Nuxt class="w-full" />

@@ -1,26 +1,24 @@
 <template>
-  <div>
-    <div class="grid grid-flow-row gap-40">
-      <SectionFeatured
-        v-bind="app.sections.featured"
-        :install-url="app.installUrl"
-      />
-      <SectionWhyUse :app-name="app.name" v-bind="app.sections.whyUse" />
-      <SectionInstall
-        :install-url="app.installUrl"
-        v-bind="app.sections.install"
-      />
-      <SectionFeatures v-bind="app.sections.features" />
-      <SectionPricing
-        :install-url="app.installUrl"
-        v-bind="app.sections.pricing"
-      />
-      <SectionFaqs v-bind="app.sections.faqs" />
-      <SectionInstall
-        :install-url="app.installUrl"
-        v-bind="app.sections.install"
-      />
-    </div>
+  <div class="grid grid-flow-row gap-40 justify-items-center pb-20">
+    <SectionFeatured
+      v-bind="app.sections.featured"
+      :install-url="app.installUrl"
+    />
+    <SectionWhyUse :app-name="app.name" v-bind="app.sections.whyUse" />
+    <SectionInstall
+      :install-url="app.installUrl"
+      v-bind="app.sections.install"
+    />
+    <SectionFeatures v-bind="app.sections.features" />
+    <SectionPricing
+      :install-url="app.installUrl"
+      v-bind="app.sections.pricing"
+    />
+    <SectionFaqs v-bind="app.sections.faqs" />
+    <SectionInstall
+      :install-url="app.installUrl"
+      v-bind="app.sections.install"
+    />
   </div>
 </template>
 

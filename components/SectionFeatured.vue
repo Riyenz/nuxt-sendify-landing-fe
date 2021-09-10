@@ -1,17 +1,5 @@
 <template>
   <div class="relative bg-ambient xl:bg-transparent">
-    <svg
-      class="absolute top-0 left-0 z-0 w-full transform"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1399 632.076"
-    >
-      <g transform="translate(0 -47.811)">
-        <path
-          d="M0,47.811H1399V679.887L0,555.652Z"
-          :fill="theme.extend.colors.ambient"
-        />
-      </g>
-    </svg>
     <div class="w-full gap-10 mb-8 relative z-10">
       <div class="rounded-l-lg px-4 py-8 md:px-10">
         <h1
