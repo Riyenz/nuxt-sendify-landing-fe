@@ -4,6 +4,7 @@ export interface IApp {
   installUrl: string
   blogUrl: string
   twitterUsername: string
+  image: string
   socials: ISocials
   sections: {
     featured: IFeaturedSection

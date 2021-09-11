@@ -43,34 +43,65 @@ export default class IndexPage extends Vue {
       title: this.app.name,
       meta: [
         {
+          hid: 'description',
           name: 'description',
           content: this.app.sections.featured.description,
         },
         /** Open Graph Meta Tags */
-        { property: 'og:type', content: this.app.name },
-        { property: 'og:title', content: this.app.sections.featured.title },
+        { hid: 'og:type', property: 'og:type', content: this.app.name },
         {
+          hid: 'og:title',
+          property: 'og:title',
+          content: this.app.sections.featured.title,
+        },
+        {
+          hid: 'og:description',
           property: 'og:description',
           content: this.app.sections.featured.description,
         },
-        { property: 'og:image', content: this.app.sections.featured.image },
-        { property: 'og:site_name', content: this.app.name },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: this.app.image,
+        },
+        {
+          hid: 'og:site_name',
+          property: 'og:site_name',
+          content: this.app.name,
+        },
 
         /** Twitter Meta Tags */
         {
+          hid: 'twitter:title',
           property: 'twitter:title',
           content: this.app.sections.featured.title,
         },
         {
+          hid: 'twitter:description',
           property: 'twitter:description',
           content: this.app.sections.featured.description,
         },
         {
+          hid: 'twitter:image',
           property: 'twitter:image',
-          content: this.app.sections.featured.image,
+          content: this.app.image,
         },
-        { property: 'twitter:site', content: this.app.twitterUsername },
-        { property: 'twitter:creator', content: this.app.twitterUsername },
+        {
+          hid: 'twitter:site',
+          property: 'twitter:site',
+          content: this.app.twitterUsername,
+        },
+        {
+          hid: 'twitter:creator',
+          property: 'twitter:creator',
+          content: this.app.twitterUsername,
+        },
+        /** Apple Mobile Meta Tags */
+        {
+          hid: 'apple-mobile-web-app-title',
+          name: 'apple-mobile-web-app-title',
+          content: this.app.name,
+        },
       ],
     }
   }
